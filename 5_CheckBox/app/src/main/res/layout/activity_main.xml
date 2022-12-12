@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:textSize="18dp"
+        android:textColor="#FF5B0F"
+        android:textAlignment="center"/>
+
+
+
+
+
+    <CheckBox
+        android:id="@+id/option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:button="@drawable/add"
+        android:text="Coffee"
+        android:onClick="checkBox"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00ff00"
+        android:button="@drawable/add"
+        android:text="Tea"
+        android:onClick="checkBox"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@id/option1"
+        android:layout_marginTop="50dp"/>
+
+    <CheckBox
+        android:id="@+id/option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/add"
+        android:onClick="checkBox"
+        android:text="Churot"
+        android:textColor="#0000ff"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@id/option2"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
