@@ -57,6 +57,17 @@
     </RadioGroup>
 
     <CheckBox
+        android:id="@+id/custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/option1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="57dp"
+        android:button="@drawable/checkbox_background"
+        android:text="Split color checkbox" />
+
+    <CheckBox
         android:id="@+id/option1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

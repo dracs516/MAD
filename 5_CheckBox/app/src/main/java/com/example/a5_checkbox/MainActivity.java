@@ -11,9 +11,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    CheckBox c1, c2, c3;
+    CheckBox c1, c2, c3, custom;
     TextView t;
-    Button btn;
+    Button btn,radio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
         c3 = findViewById(R.id.option3);
         t = findViewById(R.id.menu);
         btn = findViewById(R.id.btn);
+        custom = findViewById(R.id.custom);
+        radio=findViewById(R.id.radio1);
+        
+        radio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Radio", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Niyati", Toast.LENGTH_SHORT).show();
                 count++;
                 if (count % 2 != 0) {
                     btn.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.empty, 0);
@@ -42,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+//
+//    public void checkBoxed(View v) {
+//        if (custom.isChecked()) {
+//            custom.setButtonDrawable(R.drawable.checkbox_gradient);
+//        }
+//        else{
+//            custom.setButtonDrawable(R.drawable.checkbox);
+//        }
+//    }
 
     public void checkBox(View v) {
         StringBuilder str = new StringBuilder();
