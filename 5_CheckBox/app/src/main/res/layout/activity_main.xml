@@ -6,54 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <TextView
+        android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/menu"
         android:layout_centerHorizontal="true"
         android:fontFamily="casual"
-        android:textSize="18dp"
+        android:textAlignment="center"
         android:textColor="#FF5B0F"
-        android:textAlignment="center"/>
+        android:textSize="18dp" />
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/option1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="150dp">
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opt1"
+            android:backgroundTint="#ff0000"/>
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opt2" />
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opt3" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opt4" />
+
+    </RadioGroup>
 
     <CheckBox
         android:id="@+id/option1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ff0000"
-        android:button="@drawable/add"
-        android:text="Coffee"
-        android:onClick="checkBox"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:button="@drawable/add"
+        android:onClick="checkBox"
+        android:text="Coffee"
+        android:textColor="#ff0000" />
 
     <CheckBox
         android:id="@+id/option2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#00ff00"
-        android:button="@drawable/add"
-        android:text="Tea"
-        android:onClick="checkBox"
-        android:layout_centerInParent="true"
         android:layout_alignTop="@id/option1"
-        android:layout_marginTop="50dp"/>
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:button="@drawable/add"
+        android:onClick="checkBox"
+        android:text="Tea"
+        android:textColor="#00ff00" />
 
     <CheckBox
         android:id="@+id/option3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@id/option2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
         android:button="@drawable/add"
         android:onClick="checkBox"
         android:text="Churot"
-        android:textColor="#0000ff"
-        android:layout_centerInParent="true"
-        android:layout_alignTop="@id/option2"
-        android:layout_marginTop="50dp"/>
+        android:textColor="#0000ff" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="125dp"
+        android:drawableRight="@drawable/empty"
+        android:onClick="hourGlass"
+        android:text="Do nothing" />
 
 </RelativeLayout>
