@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".D_Time_Picker_On_Edit_Text">
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="574dp"
+        android:background="#d4d4d4"
+        android:hint="Select Time..."
+        android:padding="15dp"
+        android:textColor="#090"
+        android:textColorHint="#090"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
